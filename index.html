@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Special Wishes</title>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css">
+  <style>
+  *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.img {
+  background-image: url("./IMAGES/BDY.jpg");
+  background-position: center center;
+  background-size:contain;
+ 
+  background-repeat: no-repeat;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+body {
+  
+  background: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 0px 50px;
+  overflow: visible;
+}
+#wish {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #172c66fd;
+  display: none;
+}
+video{
+  margin-top: 10px;
+}
+
+p{
+  font-size:30px;
+  font-weight:350;
+  margin-top:10px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 30px 30px;
+  font-size: 18px;
+  background-color: #172c66fd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #172c66d6;
+}
+h1{
+  text-align: center;
+}
+
+  /* Swiper paragraph slider */
+.mySwiper {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+}
+
+.mySwiper h4 {
+  font-size: 1.2rem;
+  color:#172c66fd;
+  line-height: 1.6;
+  font-weight: 500;
+}
+/* Make navigation buttons visible */
+.swiper-button-next,
+.swiper-button-prev {
+  color:#172c66fd;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.swiper-button-next{
+margin-left: 200px;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.2);
+  color:#1750edd3;
+}
+</style>
+  
+</head>
+
+<body>
+
+  <!--background img-->
+  <div class="img"></div>
+  <!--button-->
+  <button onclick="showWishes()">Click for Surprise 🎁</button>
+
+  <div id="wish">✨ Wishing you all the happiness in the world! ✨<br><br>
+    <video src="/IMAGES/video.mp4" controls autoplay></video>
+
+    <!-- Paragraph Slider -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+          <h4>
+            😊🤩जन्मदिन की हार्दिक शुभकामनाएँ UNCLE JI! 🎉
+            आपकी मेहनत, लगन और संघर्ष ने हमेशा हमें यह सिखाया है कि सफलता उन्हीं के कदम चूमती है जो कभी हार नहीं मानते।
+            आपका आईटी क्षेत्र में सफर न केवल प्रेरणादायक है बल्कि यह साबित करता है कि समर्पण और जुनून से हर मुश्किल आसान
+            हो
+            सकती है।<br>
+
+            😊🤩आपकी सोच हमेशा नयी तकनीक की तरह आगे बढ़ती रहती है — जो हर दिन कुछ नया सिखाती और बदलाव लाती है।
+            भगवान से यही प्रार्थना है कि आने वाला हर साल आपके जीवन में नई "अपडेट्स" लाए,
+            हर "प्रोजेक्ट" सफलता से कंप्लीट हो, और हर सपना "रियल टाइम" में सच हो जाए। <br>
+
+            😊🤩✨आप यूँ ही मुस्कुराते रहें, प्रेरणा देते रहें, और जीवन की हर चुनौती को अपनी ताकत बनाते रहें।<br>
+            Once again, Happy Birthday to the most hardworking and inspiring uncle ji! 🎂
+          </h4>
+        </div>
+        <div class="swiper-slide">
+          <h4>✨Many best wishes on your birthday!✨<br><br>
+            😊 You have always been a guide, support, and source of inspiration for us.
+            Your experience and wisdom have helped us face difficulties, and for that, we will always be grateful.
+            Your experience teaches us how to move forward even in tough times.
+            Your positive thinking has always inspired us.
+            We truly value your hard work and struggles.
+            Your advice is priceless to us, and we will always keep learning from your experiences.
+            May your life be filled with happiness at every step, success, and new achievements.
+            And may you continue to inspire us in the same way forever.🥳🥰🎂😊🤩</h4>
+        </div>
+       
+        <div class="swiper-slide">
+          <h3>THANK YOU SO MUCH Uncle JI<br>
+            आपके मार्गदर्शन, प्रेरणा,प्यार और साथ  से<br> आज आपको आपका जन्मदिन इस तरह टेक्नोलॉजी से विष कर पाई🥰🥳🤩
+          </h3>
+        </div>
+      </div>
+      <!-- Add navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Add pagination (dots) -->
+      <div class="swiper-pagination"></div>
+    </div>
+   </div>
+     
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./main.js"></script>
+
+  <script>
+function showWishes() {
+  document.getElementById("wish").style.display = "block";
+
+  // ✅ Initialize Swiper after showing the wish section
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: false,
+     // delay: 3000,
+      //disableOnInteraction: false,
+    
+  });
+}
+  </script>
+</body>
+
+</html>
+
+
+
+    
